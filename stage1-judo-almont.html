@@ -13,12 +13,28 @@
 
 <nav>
   <a href="index.html" class="nav-back">← Retour au portfolio</a>
-   <a href="pdf/compte-rendu-stage1-judo-almont.pdf" download class="nav-tag">STAGE 1</a>
+  <span class="nav-tag" id="btn-stage1">STAGE 1</span>
   <button id="theme-toggle" aria-label="Changer de thème">
     <span class="icon-dark">&#9789; Sombre</span>
     <span class="icon-light">&#9728; Clair</span>
   </button>
 </nav>
+
+<!-- CARD COMPTE RENDU (cachée par défaut) -->
+<div class="cr-overlay" id="cr-overlay" onclick="closeCR()"></div>
+<div class="cr-card" id="cr-card">
+  <div class="project-year">2025 — Stage 1</div>
+  <h3 class="project-name">Compte rendu — Judo Club Almont</h3>
+  <p class="project-desc">Document de synthèse du stage : architecture Laravel, base de données, formulaire d'inscription et workflow Git.</p>
+  <div class="project-tags">
+    <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+    <span class="tag purple">Blade</span><span class="tag purple">GitHub</span>
+  </div>
+  <div class="project-actions">
+    <a href="pdf/compte-rendu-stage1-judo-almont.pdf" download class="dl-btn dl-btn-primary">⬇ Télécharger le compte rendu</a>
+    <button onclick="closeCR()" class="dl-btn dl-btn-outline">✕ Fermer</button>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -383,6 +399,15 @@ git push origin <span class="str">feature/formulaire-inscription</span></div>
       if (fav) fav.href = next === 'dark' ? 'favicon-dark.svg' : 'favicon-light.svg';
     });
   })();
+
+  document.getElementById('btn-stage1').addEventListener('click', function() {
+  document.getElementById('cr-card').classList.add('active');
+  document.getElementById('cr-overlay').classList.add('active');
+  });
+  function closeCR() {
+    document.getElementById('cr-card').classList.remove('active');
+    document.getElementById('cr-overlay').classList.remove('active');
+}
 </script>
 </body>
 </html>

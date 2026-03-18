@@ -344,3 +344,69 @@ footer {
   transition: color 0.2s;
 }
 .footer-links a:hover { color: var(--accent); }
+
+/* ── COMPTE RENDU CARD ── */
+.nav-tag { cursor: pointer; }
+
+.cr-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 200;
+}
+.cr-overlay.active { display: block; }
+
+.cr-card {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -48%) scale(0.96);
+  z-index: 201;
+  width: min(480px, 90vw);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent3);
+  border-radius: 4px;
+  padding: 1.8rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+.cr-card.active {
+  opacity: 1;
+  pointer-events: all;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.project-year {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--accent3);
+  letter-spacing: 0.1em;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.project-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.6rem;
+}
+.project-desc {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+.project-actions {
+  display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
