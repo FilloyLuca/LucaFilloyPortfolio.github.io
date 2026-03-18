@@ -33,7 +33,7 @@
     }
     .nav-back { font-family: var(--mono); font-size: 0.75rem; color: var(--muted); text-decoration: none; letter-spacing: 0.1em; display: flex; align-items: center; gap: 0.5rem; transition: color 0.2s; }
     .nav-back:hover { color: var(--accent); }
-    .nav-tag { font-family: var(--mono); font-size: 0.7rem; color: var(--accent2); background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.25); padding: 0.25rem 0.75rem; border-radius: 2px; letter-spacing: 0.1em; color: #a78bfa; }
+    .nav-tag { font-family: var(--mono); font-size: 0.7rem; color: var(--accent2); background: rgba(124,58,237,0.1); border: 1px solid rgba(124,58,237,0.25); padding: 0.25rem 0.75rem; border-radius: 2px; letter-spacing: 0.1em; color: #a78bfa;  text-decoration: none; }
 
     .hero {
       min-height: 52vh; display: flex; align-items: flex-end;
