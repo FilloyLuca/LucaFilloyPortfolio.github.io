@@ -1,0 +1,50 @@
+🛠️ Prérequis
+Avant de commencer, assurez-vous que vous avez installé :
+
+Laragon (https://laragon.org/)
+
+Node.js et npm (https://nodejs.org/)
+
+Composer (https://getcomposer.org/download/)
+
+🚀 Étapes pour lancer le site Laravel
+1. Démarrer Laragon
+Ouvrez Laragon.
+
+Cliquez sur "Start All" pour lancer les services Apache/Nginx, MySQL, etc.
+
+
+
+2. Accéder à votre projet Laravel
+Placez votre projet Laravel dans le dossier C:\laragon\www (par défaut).
+
+Exemple : C:\laragon\www\JudoAlmont
+
+3. Lancer le serveur Laravel 
+Accédez à votre site depuis http://http://judoalmont.test
+
+Sinon, vous pouvez lancer le serveur intégré de Laravel :
+
+bash
+Copier le code
+php artisan serve
+Et aller sur l'adresse fournie (généralement http://127.0.0.1:8000)
+
+4. Compiler les assets (CSS/JS) avec npm
+Dans le dossier de votre projet, ouvrez un terminal (clic droit > "Terminal here" ou utilisez celui de Laragon) et tapez :
+
+bash
+Copier le code
+npm install   # à faire une fois pour installer les dépendances
+npm run dev   # pour lancer le build en mode développement
+
+5. Base de données avec phpMyAdmin
+Dans Laragon, cliquez sur "Menu > Database > phpMyAdmin"
+ou allez directement sur : http://localhost/phpmyadmin
+
+Connectez-vous avec :
+
+Utilisateur : root
+
+Mot de passe : (laissez vide par défaut)
+
