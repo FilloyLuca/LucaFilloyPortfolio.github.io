@@ -13,12 +13,41 @@
 
 <nav>
   <a href="index.html" class="nav-back">← Retour au portfolio</a>
-  <span class="nav-tag">VEILLE TECHNO</span>
+  <span class="nav-tag" id="btn-veille">VEILLE TECHNO</span>
   <button id="theme-toggle" aria-label="Changer de thème">
     <span class="icon-dark">&#9789; Sombre</span>
     <span class="icon-light">&#9728; Clair</span>
   </button>
 </nav>
+
+<!-- CARD DÉFINITION VEILLE (cachée par défaut) -->
+<div class="cr-overlay" id="cr-overlay" onclick="closeCR()"></div>
+<div class="cr-card" id="cr-card">
+  <div class="project-year">2025/2026 — Veille technologique</div>
+  <h3 class="project-name">C'est quoi une veille technologique ?</h3>
+  <p class="project-desc">
+    La <strong style="color:var(--text)">veille technologique</strong> consiste à surveiller de façon régulière les évolutions d'un domaine technique : nouvelles technologies, outils, tendances, publications. Elle permet d'anticiper les changements, de rester compétitif et d'adapter ses pratiques professionnelles.
+  </p>
+  <p class="project-desc">
+    Dans le cadre du BTS SIO, elle fait partie des compétences attendues : chaque étudiant doit démontrer sa capacité à s'informer, analyser et synthétiser des informations techniques sur un sujet donné.
+  </p>
+  <div class="project-tags">
+    <span class="tag">IA</span>
+    <span class="tag">Jeu vidéo</span>
+    <span class="tag purple">BTS SIO</span>
+    <span class="tag purple">2025/2026</span>
+  </div>
+  <div class="project-year" style="margin-top:1rem; margin-bottom:0.5rem;">Sources</div>
+  <div class="project-actions" style="flex-direction:column; gap:0.4rem;">
+    <a href="https://surveys.gdconf.com/" target="_blank" class="dl-btn dl-btn-outline">↗ GDC State of the Game Industry 2025</a>
+    <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-ace/" target="_blank" class="dl-btn dl-btn-outline">↗ NVIDIA ACE — PNJ autonomes</a>
+    <a href="https://github.com/features/copilot" target="_blank" class="dl-btn dl-btn-outline">↗ GitHub Copilot</a>
+    <a href="https://unity.com/ai" target="_blank" class="dl-btn dl-btn-outline">↗ Unity AI</a>
+  </div>
+  <div class="project-actions" style="margin-top:1rem;">
+    <button onclick="closeCR()" class="dl-btn dl-btn-outline">✕ Fermer</button>
+  </div>
+</div>
 
 <!-- HERO -->
 <div class="hero">
@@ -344,6 +373,15 @@
       if (fav) fav.href = next === 'dark' ? 'favicon-dark.svg' : 'favicon-light.svg';
     });
   })();
+
+  document.getElementById('btn-veille').addEventListener('click', function() {
+  document.getElementById('cr-card').classList.add('active');
+  document.getElementById('cr-overlay').classList.add('active');
+  });
+  function closeCR() {
+    document.getElementById('cr-card').classList.remove('active');
+    document.getElementById('cr-overlay').classList.remove('active');
+  }
 
   /* ── EASTER EGG 🔥 ── */
   const fireBtn = document.getElementById('fire-egg');
