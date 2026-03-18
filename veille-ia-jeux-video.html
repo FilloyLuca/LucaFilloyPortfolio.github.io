@@ -335,6 +335,16 @@
 </footer>
 
 <script>
+
+  window.addEventListener('load', function() {
+  document.getElementById('cr-card').classList.remove('active');
+  document.getElementById('cr-overlay').classList.remove('active');
+  });
+
+  // Forcer la fermeture de la card au chargement
+  document.getElementById('cr-card').classList.remove('active');
+  document.getElementById('cr-overlay').classList.remove('active');
+  
   /* Génération de la grille pixel déco */
   const grid = document.getElementById('pixelGrid');
   if (grid) {
@@ -344,11 +354,6 @@
       grid.appendChild(d);
     }
   }
-
-  window.addEventListener('load', function() {
-  document.getElementById('cr-card').classList.remove('active');
-  document.getElementById('cr-overlay').classList.remove('active');
-  });
 
   /* Scroll fade-in */
   const obs = new IntersectionObserver(entries => {
