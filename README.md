@@ -3,7 +3,7 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Status-En%20ligne-success?style=for-the-badge">
   <img src="https://img.shields.io/badge/BTS%20SIO-SLAM-blue?style=for-the-badge">
-  <img src="https://img.shields.io/badge/HTML-CSS-JS-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Tech-HTML%20CSS%20JS-orange?style=for-the-badge">
 </p>
 
 <p align="center">
