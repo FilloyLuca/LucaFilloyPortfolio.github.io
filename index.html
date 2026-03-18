@@ -119,35 +119,48 @@
   </div>
   <div class="projects-grid">
 
-<div class="project-card fade-in" onclick="openModal('modal-api-series')" style="cursor:pointer;">
-  <div class="project-year">2025 - Projet BTS</div>
-  
-  <h3 class="project-name">API REST - Gestion de séries</h3>
-  
-  <p class="project-desc">
-    API REST permettant de gérer des séries, genres et saisons. Développée en Java avec Spring Boot,
-    base de données MySQL/MariaDB auto-générée et alimentée via import.sql.
-  </p>
-  
-  <div class="project-tags">
-    <span class="tag">Java</span>
-    <span class="tag">Spring Boot</span>
-    <span class="tag">REST API</span>
-    <span class="tag">MySQL</span>
-    <span class="tag purple">Gradle</span>
-  </div>
-  
-  <span class="project-link">Voir le projet &rarr;</span>
-</div>
-
-    <div class="project-card fade-in" onclick="openModal('modal-vitrine')" style="cursor:pointer;">
-      <div class="project-year">2025 - Stage entreprise</div>
-      <h3 class="project-name">Site vitrine responsive</h3>
-      <p class="project-desc">Realisation du site vitrine d'une association locale. Integration HTML/CSS responsive, formulaire de contact et CMS.</p>
+    <div class="project-card fade-in" onclick="openModal('modal-api-series')" style="cursor:pointer;">
+      <div class="project-year">2025 - Projet BTS</div>
+      
+      <h3 class="project-name">API REST - Gestion de séries</h3>
+      
+      <p class="project-desc">
+        API REST permettant de gérer des séries, genres et saisons. Développée en Java avec Spring Boot,
+        base de données MySQL/MariaDB auto-générée et alimentée via import.sql.
+      </p>
+      
       <div class="project-tags">
-        <span class="tag">HTML5</span><span class="tag">CSS3</span>
-        <span class="tag">WordPress</span><span class="tag purple">Figma</span>
+        <span class="tag">Java</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">REST API</span>
+        <span class="tag">MySQL</span>
+        <span class="tag purple">Gradle</span>
       </div>
+      
+      <span class="project-link">Voir le projet &rarr;</span>
+    </div>
+
+    <div class="project-card fade-in" onclick="openModal('modal-monstersweb')" style="cursor:pointer;">
+      <div class="project-year">2025 - Projet BTS</div>
+      
+      <h3 class="project-name">MonstersWeb - Jeu web interactif</h3>
+      
+      <p class="project-desc">
+        Développement d’un jeu web inspiré de Pokémon, avec interface graphique moderne,
+        gestion des utilisateurs, combats et capture de monstres. Projet basé sur une
+        architecture complète avec frontend dynamique et backend Spring Boot.
+      </p>
+      
+      <div class="project-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS3</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag purple">Angular</span>
+        <span class="tag purple">MariaDB</span>
+      </div>
+      
       <span class="project-link">Voir le projet &rarr;</span>
     </div>
 
@@ -227,46 +240,60 @@
   </div>
 </div>
 
-<!-- Modal 2 : Site vitrine -->
-<div class="project-modal" id="modal-vitrine">
+<!-- Modal : MonstersWeb -->
+<div class="project-modal" id="modal-monstersweb">
   <button class="modal-close" onclick="closeModal()">&times;</button>
   <div class="modal-inner">
+    
     <div class="modal-left">
-      <div class="modal-eyebrow">2025 &mdash; Stage entreprise</div>
-      <h2 class="modal-title">Site vitrine responsive</h2>
+      <div class="modal-eyebrow">2025 &mdash; Projet BTS</div>
+      
+      <h2 class="modal-title">MonstersWeb - Jeu web interactif</h2>
+      
       <p class="modal-desc">
-        Realisation complete du site vitrine d'une association locale dans le cadre d'un stage.
-        Le projet a commence par une phase de <strong>conception maquette</strong> avant de passer
-        a l'integration HTML/CSS entierement <strong>responsive</strong>.
+        Développement d’une application web interactive inspirée des mécaniques de Pokémon.
+        Le projet consiste à transformer une application Kotlin en version web avec une
+        <strong>interface graphique moderne</strong> accessible depuis un navigateur.
       </p>
+      
       <p class="modal-desc">
-        Un <strong>formulaire de contact</strong> fonctionnel a ete integre, et la gestion des contenus
-        a ete confiee a un CMS WordPress permettant au client de mettre a jour ses informations
-        de facon autonome.
+        L’application permet la <strong>gestion des utilisateurs</strong> (inscription, connexion),
+        le <strong>combat de monstres</strong>, la capture, ainsi que la sauvegarde des parties.
+        L’architecture repose sur un backend <strong>Spring Boot</strong> et une base de données
+        <strong>MariaDB</strong>, avec une interface dynamique en JavaScript / Angular.
       </p>
+
       <div class="modal-tags">
-        <span class="tag">HTML5</span><span class="tag">CSS3</span>
-        <span class="tag">WordPress</span><span class="tag purple">Responsive</span>
-        <span class="tag purple">CMS</span>
+        <span class="tag">Kotlin</span>
+        <span class="tag">Spring Boot</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Angular</span>
+        <span class="tag">MariaDB</span>
+        <span class="tag purple">Jeu Web</span>
+        <span class="tag purple">Full Stack</span>
       </div>
-      <a href="#" class="modal-github-btn" target="_blank" rel="noopener">
+
+      <a href="https://github.com/FilloyLuca/OGMonsterWeb" class="modal-github-btn" target="_blank" rel="noopener">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="18"/>
         Voir sur GitHub
       </a>
     </div>
+
     <div class="modal-right">
       <div class="modal-preview">
-        <div class="modal-preview-icon">&#127760;</div>
-        <div class="modal-preview-label">Site vitrine</div>
+        <div class="modal-preview-icon">&#127918;</div>
+        <div class="modal-preview-label">MonstersWeb</div>
+        
         <div class="modal-features">
-          <div class="modal-feature"><span class="feature-dot"></span>Conception maquette</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Integration responsive</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Formulaire de contact</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Gestion CMS WordPress</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Compatible mobile</div>
+          <div class="modal-feature"><span class="feature-dot"></span>Système de combat</div>
+          <div class="modal-feature"><span class="feature-dot"></span>Capture de monstres</div>
+          <div class="modal-feature"><span class="feature-dot"></span>Gestion utilisateurs</div>
+          <div class="modal-feature"><span class="feature-dot"></span>Interface dynamique</div>
+          <div class="modal-feature"><span class="feature-dot"></span>Architecture full-stack</div>
         </div>
       </div>
     </div>
+
   </div>
 </div>
 
