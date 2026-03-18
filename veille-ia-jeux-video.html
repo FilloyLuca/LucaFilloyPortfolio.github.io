@@ -39,9 +39,7 @@
   </div>
   <div class="project-year" style="margin-top:1rem; margin-bottom:0.5rem;">Sources</div>
   <div class="project-actions" style="flex-direction:column; gap:0.4rem;">
-    <a href="https://surveys.gdconf.com/" target="_blank" class="dl-btn dl-btn-outline">↗ GDC State of the Game Industry 2025</a>
-    <a href="https://www.nvidia.com/en-us/geforce/news/nvidia-ace/" target="_blank" class="dl-btn dl-btn-outline">↗ NVIDIA ACE — PNJ autonomes</a>
-    <a href="https://github.com/features/copilot" target="_blank" class="dl-btn dl-btn-outline">↗ GitHub Copilot</a>
+    <a href="https://www.gdconf.com/state-of-the-industry" target="_blank" class="dl-btn dl-btn-outline">↗ GDC State of the Game Industry 2025</a>    <a href="https://github.com/features/copilot" target="_blank" class="dl-btn dl-btn-outline">↗ GitHub Copilot</a>
     <a href="https://unity.com/ai" target="_blank" class="dl-btn dl-btn-outline">↗ Unity AI</a>
   </div>
   <div class="project-actions" style="margin-top:1rem;">
@@ -346,6 +344,11 @@
       grid.appendChild(d);
     }
   }
+
+  window.addEventListener('load', function() {
+  document.getElementById('cr-card').classList.remove('active');
+  document.getElementById('cr-overlay').classList.remove('active');
+  });
 
   /* Scroll fade-in */
   const obs = new IntersectionObserver(entries => {
