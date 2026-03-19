@@ -23,8 +23,12 @@
     body { background: var(--bg); color: var(--text); font-family: var(--sans); overflow-x: hidden; line-height: 1.7; }
     ::-webkit-scrollbar { width: 4px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--accent2); border-radius: 2px; }
-
+    /* ::-webkit-scrollbar-thumb { background: var(--accent2); border-radius: 2px; } */
+    ::-webkit-scrollbar-thumb {
+      background: #10b981;
+      border-radius: 2px;
+    }
+    
     /* ── NAV ── */
     nav {
       position: fixed; top: 0; left: 0; right: 0; z-index: 100;
