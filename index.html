@@ -1,625 +1,739 @@
 <!DOCTYPE html>
 <html lang="fr" data-theme="dark">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio - BTS SIO SLAM</title>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap" rel="stylesheet"/>
-  <link id="favicon" rel="icon" type="image/svg+xml" href="favicon-dark.svg"/>
-  <link id="theme-css" rel="stylesheet" href="style-dark.css"/>
-  <link rel="stylesheet" href="style.css"/>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Syne:wght@400;600;800&display=swap"
+    rel="stylesheet" />
+  <link id="favicon" rel="icon" type="image/svg+xml" href="favicon-dark.svg" />
+  <link id="theme-css" rel="stylesheet" href="style-dark.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<nav>
-  <a href="#" class="nav-logo">[ PORTFOLIO - BTS SIO SLAM ]</a>
-  <ul class="nav-links">
-    <li><a href="#about">A propos</a></li>
-    <li><a href="#stages">Stages</a></li>
-    <li><a href="#projects">Projets</a></li>
-    <li><a href="#skills">Competences</a></li>
-    <li><a href="#veille">Veille</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-  <button id="theme-toggle" aria-label="Changer de theme">
-    <span class="icon-dark">Sombre</span>
-    <span class="icon-light">Clair</span>
-  </button>
-</nav>
+  <nav>
+    <a href="#" class="nav-logo">[ PORTFOLIO - BTS SIO SLAM ]</a>
+    <ul class="nav-links">
+      <li><a href="#about">A propos</a></li>
+      <li><a href="#stages">Stages</a></li>
+      <li><a href="#projects">Projets</a></li>
+      <li><a href="#skills">Competences</a></li>
+      <li><a href="#veille">Veille</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button id="theme-toggle" aria-label="Changer de theme">
+      <span class="icon-dark">Sombre</span>
+      <span class="icon-light">Clair</span>
+    </button>
+  </nav>
 
-<div class="hero">
-  <div class="hero-grid"></div>
-  <div class="hero-glow"></div>
-  <div class="hero-glow2"></div>
-  <div class="hero-content">
-    <div class="hero-badge">BTS SIO - Option SLAM - 2024/2026</div>
-    <h1 class="hero-name">Luca<br/><span>Filloy</span></h1>
-    <p class="hero-title">// Developpeur Web et Applications - etudiant BTS SIO SLAM</p>
-    <p class="hero-desc">
-      Passionne par le developpement logiciel, je construis des solutions web et applicatives
-      fiables. Curieux, rigoureux, toujours en veille sur les nouvelles technologies.
-    </p>
-    <div class="hero-cta">
-      <a href="#projects" class="btn btn-primary">Voir mes projets</a>
-      <a href="#contact" class="btn btn-outline">Me contacter</a>
-    </div>
-  </div>
-  <div class="hero-stats">
-    <div class="stat"><div class="stat-num">3+</div><div class="stat-label">Projets realises</div></div>
-    <div class="stat"><div class="stat-num">2</div><div class="stat-label">Stages en entreprise</div></div>
-    <div class="stat"><div class="stat-num">6</div><div class="stat-label">Langages maitrises</div></div>
-  </div>
-</div>
-
-<section id="about">
-  <div class="section-header fade-in">
-    <span class="section-num">01 -</span>
-    <h2 class="section-title">A propos</h2>
-    <span class="section-line"></span>
-  </div>
-  <div class="about-grid">
-    <div class="about-text fade-in">
-      <p>Actuellement en <strong>BTS SIO option SLAM</strong> (Solutions Logicielles et Applications Metiers), je me forme aux metiers du developpement informatique avec une approche concrete et orientee projet.</p>
-      <p>J'ai acquis des competences solides en <strong>developpement web front-end et back-end</strong>, en gestion de bases de donnees et en conception d'applications.</p>
-      <p>En dehors des cours, je pratique la veille technologique et je developpe des <strong>projets personnels</strong> pour approfondir mes connaissances.</p>
-    </div>
-    <div class="about-info fade-in">
-      <div class="info-row"><span class="info-label">Nom</span><span class="info-value">Luca Filloy</span></div>
-      <div class="info-row"> <span class="info-label">Bac</span> <span class="info-value">Technologique STMG — option SIG</span></div>
-      <div class="info-row"><span class="info-label">Formation</span><span class="info-value">BTS SIO SLAM</span></div>
-      <div class="info-row"><span class="info-label">Etablissement</span><span class="info-value">Léonard De Vinci, Melun 77000</span></div>
-      <div class="info-row"><span class="info-label">Promotion</span><span class="info-value">2024 - 2026</span></div>
-      <div class="info-row">
-        <span class="info-label">Interets</span>
-        <span class="info-value">
-          <span class="tag">Web Dev</span>
-          <span class="tag">DevOps</span>
-          <span class="tag purple">Open Source</span>
-          <span class="tag purple">UI/UX</span>
-        </span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="stages">
-  <div class="section-header fade-in">
-    <span class="section-num">02 -</span>
-    <h2 class="section-title">Stages en entreprise</h2>
-    <span class="section-line"></span>
-  </div>
-  <div class="projects-grid">
-    <div class="project-card fade-in" onclick="window.location='stage1-judo-almont.html'" style="cursor:pointer;">
-      <div class="project-year">2025 - Stage 1</div>
-      <h3 class="project-name">Formulaire d'inscription - Judo Club Almont</h3>
-      <p class="project-desc">Developpement d'un formulaire d'inscription de membres avec Laravel : routes, controleur, modele Eloquent, migration MySQL et vue Blade.</p>
-      <div class="project-tags">
-        <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
-        <span class="tag purple">Blade</span><span class="tag purple">GitHub</span>
-      </div>
-      <span class="project-link">Voir le stage &rarr;</span>
-    </div>
-    
-    <div class="project-card fade-in" onclick="window.location='stage2-instagram-olevia.html'" style="cursor:pointer;">
-      <div class="project-year">2026 - Stage 2</div>
-      <h3 class="project-name">Analyse concours Instagram - Olevia</h3>
-      <p class="project-desc">Systeme automatise d'analyse de participations a un concours Instagram. Extraction HTML, verification des 3 criteres et tirage au sort via Python et MySQL.</p>
-      <div class="project-tags">
-        <span class="tag">Python</span><span class="tag">BeautifulSoup</span>
-        <span class="tag">MySQL</span><span class="tag purple">Web Scraping</span>
-      </div>
-      <span class="project-link">Voir le stage &rarr;</span>
-    </div>
-  </div>
-</section>
-
-<section id="projects">
-  <div class="section-header fade-in">
-    <span class="section-num">03 -</span>
-    <h2 class="section-title">Projets realises</h2>
-    <span class="section-line"></span>
-  </div>
-  <div class="projects-grid">
-
-    <div class="project-card fade-in" onclick="openModal('modal-api-series')" style="cursor:pointer;">
-      <div class="project-year">2025 - Projet BTS</div>
-      
-      <h3 class="project-name">API REST - Gestion de séries</h3>
-      
-      <p class="project-desc">
-        API REST permettant de gérer des séries, genres et saisons. Développée en Java avec Spring Boot,
-        base de données MySQL/MariaDB auto-générée et alimentée via import.sql.
+  <div class="hero">
+    <div class="hero-grid"></div>
+    <div class="hero-glow"></div>
+    <div class="hero-glow2"></div>
+    <div class="hero-content">
+      <div class="hero-badge">BTS SIO - Option SLAM - 2024/2026</div>
+      <h1 class="hero-name">Luca<br /><span>Filloy</span></h1>
+      <p class="hero-title">// Developpeur Web et Applications - etudiant BTS SIO SLAM</p>
+      <p class="hero-desc">
+        Passionne par le developpement logiciel, je construis des solutions web et applicatives
+        fiables. Curieux, rigoureux, toujours en veille sur les nouvelles technologies.
       </p>
-      
-      <div class="project-tags">
-        <span class="tag">Java</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">REST API</span>
-        <span class="tag">MySQL</span>
-        <span class="tag purple">Gradle</span>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Me contacter</a>
       </div>
-      
-      <span class="project-link">Voir le projet &rarr;</span>
     </div>
-
-    <div class="project-card fade-in" onclick="openModal('modal-monstersweb')" style="cursor:pointer;">
-      <div class="project-year">2025 - Projet BTS</div>
-      
-      <h3 class="project-name">MonstersWeb - Jeu web interactif</h3>
-      
-      <p class="project-desc">
-        Développement d’un jeu web inspiré de Pokémon, avec interface graphique moderne,
-        gestion des utilisateurs, combats et capture de monstres. Projet basé sur une
-        architecture complète avec frontend dynamique et backend Spring Boot.
-      </p>
-      
-      <div class="project-tags">
-        <span class="tag">HTML5</span>
-        <span class="tag">CSS3</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Kotlin</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag purple">Angular</span>
-        <span class="tag purple">MariaDB</span>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">3+</div>
+        <div class="stat-label">Projets realises</div>
       </div>
-      
-      <span class="project-link">Voir le projet &rarr;</span>
-    </div>
-
-   <div class="project-card fade-in" onclick="openModal('modal-savapp')" style="cursor:pointer;"> 
-      <div class="project-year">2026 - Projet BTS</div>
-      
-      <h3 class="project-name">SavApp - Calculateur de saponification</h3> 
-      
-      <p class="project-desc">
-        Application web permettant de calculer la composition de savons en saponification à froid.
-        Basée sur une API REST en Kotlin/Spring Boot et une interface Angular, elle intègre des
-        calculs métier complexes liés aux propriétés des corps gras.
-      </p>
-      
-      <div class="project-tags">
-        <span class="tag">Kotlin</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">Angular</span>
-        <span class="tag">MariaDB</span>
-        <span class="tag purple">API REST</span>
-        <span class="tag purple">Calcul métier</span>
+      <div class="stat">
+        <div class="stat-num">2</div>
+        <div class="stat-label">Stages en entreprise</div>
       </div>
-      
-      <span class="project-link">Voir le projet &rarr;</span>
+      <div class="stat">
+        <div class="stat-num">6</div>
+        <div class="stat-label">Langages maitrises</div>
+      </div>
     </div>
-
   </div>
-</section>
 
-<!-- ══════════════════════════════════════════
+  <section id="about">
+    <div class="section-header fade-in">
+      <span class="section-num">01 -</span>
+      <h2 class="section-title">A propos</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="about-grid">
+      <div class="about-text fade-in">
+        <p>Actuellement en <strong>BTS SIO option SLAM</strong> (Solutions Logicielles et Applications Metiers), je me
+          forme aux metiers du developpement informatique avec une approche concrete et orientee projet.</p>
+        <p>J'ai acquis des competences solides en <strong>developpement web front-end et back-end</strong>, en gestion
+          de bases de donnees et en conception d'applications.</p>
+        <p>En dehors des cours, je pratique la veille technologique et je developpe des <strong>projets
+            personnels</strong> pour approfondir mes connaissances.</p>
+      </div>
+      <div class="about-info fade-in">
+        <div class="info-row"><span class="info-label">Nom</span><span class="info-value">Luca Filloy</span></div>
+        <div class="info-row"> <span class="info-label">Bac</span> <span class="info-value">Technologique STMG — option
+            SIG</span></div>
+        <div class="info-row"><span class="info-label">Formation</span><span class="info-value">BTS SIO SLAM</span>
+        </div>
+        <div class="info-row"><span class="info-label">Etablissement</span><span class="info-value">Léonard De Vinci,
+            Melun 77000</span></div>
+        <div class="info-row"><span class="info-label">Promotion</span><span class="info-value">2024 - 2026</span></div>
+        <div class="info-row">
+          <span class="info-label">Interets</span>
+          <span class="info-value">
+            <span class="tag">Web Dev</span>
+            <span class="tag">DevOps</span>
+            <span class="tag purple">Open Source</span>
+            <span class="tag purple">UI/UX</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="stages">
+    <div class="section-header fade-in">
+      <span class="section-num">02 -</span>
+      <h2 class="section-title">Stages en entreprise</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="projects-grid">
+      <div class="project-card fade-in" onclick="window.location='stage1-judo-almont.html'" style="cursor:pointer;">
+        <div class="project-year">2025 - Stage 1</div>
+        <h3 class="project-name">Formulaire d'inscription - Judo Club Almont</h3>
+        <p class="project-desc">Developpement d'un formulaire d'inscription de membres avec Laravel : routes,
+          controleur, modele Eloquent, migration MySQL et vue Blade.</p>
+        <div class="project-tags">
+          <span class="tag">Laravel</span><span class="tag">PHP</span><span class="tag">MySQL</span>
+          <span class="tag purple">Blade</span><span class="tag purple">GitHub</span>
+        </div>
+        <span class="project-link">Voir le stage &rarr;</span>
+      </div>
+
+      <div class="project-card fade-in" onclick="window.location='stage2-instagram-olevia.html'"
+        style="cursor:pointer;">
+        <div class="project-year">2026 - Stage 2</div>
+        <h3 class="project-name">Analyse concours Instagram - Olevia</h3>
+        <p class="project-desc">Systeme automatise d'analyse de participations a un concours Instagram. Extraction HTML,
+          verification des 3 criteres et tirage au sort via Python et MySQL.</p>
+        <div class="project-tags">
+          <span class="tag">Python</span><span class="tag">BeautifulSoup</span>
+          <span class="tag">MySQL</span><span class="tag purple">Web Scraping</span>
+        </div>
+        <span class="project-link">Voir le stage &rarr;</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-header fade-in">
+      <span class="section-num">03 -</span>
+      <h2 class="section-title">Projets realises</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card fade-in" onclick="openModal('modal-api-series')" style="cursor:pointer;">
+        <div class="project-year">2025 - Projet BTS</div>
+
+        <h3 class="project-name">API REST - Gestion de séries</h3>
+
+        <p class="project-desc">
+          API REST permettant de gérer des séries, genres et saisons. Développée en Java avec Spring Boot,
+          base de données MySQL/MariaDB auto-générée et alimentée via import.sql.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">REST API</span>
+          <span class="tag">MySQL</span>
+          <span class="tag purple">Gradle</span>
+        </div>
+
+        <span class="project-link">Voir le projet &rarr;</span>
+      </div>
+
+      <div class="project-card fade-in" onclick="openModal('modal-monstersweb')" style="cursor:pointer;">
+        <div class="project-year">2025 - Projet BTS</div>
+
+        <h3 class="project-name">MonstersWeb - Jeu web interactif</h3>
+
+        <p class="project-desc">
+          Développement d’un jeu web inspiré de Pokémon, avec interface graphique moderne,
+          gestion des utilisateurs, combats et capture de monstres. Projet basé sur une
+          architecture complète avec frontend dynamique et backend Spring Boot.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Kotlin</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag purple">Angular</span>
+          <span class="tag purple">MariaDB</span>
+        </div>
+
+        <span class="project-link">Voir le projet &rarr;</span>
+      </div>
+
+      <div class="project-card fade-in" onclick="openModal('modal-savapp')" style="cursor:pointer;">
+        <div class="project-year">2026 - Projet BTS</div>
+
+        <h3 class="project-name">SavApp - Calculateur de saponification</h3>
+
+        <p class="project-desc">
+          Application web permettant de calculer la composition de savons en saponification à froid.
+          Basée sur une API REST en Kotlin/Spring Boot et une interface Angular, elle intègre des
+          calculs métier complexes liés aux propriétés des corps gras.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Angular</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag purple">API REST</span>
+          <span class="tag purple">Calcul métier</span>
+        </div>
+
+        <span class="project-link">Voir le projet &rarr;</span>
+      </div>
+
+      <div class="project-card fade-in" onclick="openModal('modal-geoworld')" style="cursor:pointer;">
+        <div class="project-year">2024 - Projet BTS</div>
+
+        <h3 class="project-name">Geoworld - Projet Web 3 tiers</h3>
+
+        <p class="project-desc">
+          Projet pédagogique destiné aux étudiants apprentis développeurs pour apprendre à travailler
+          sur une base de projet existante. L'objectif est de respecter des conventions de codage,
+          comprendre une architecture web 3 tiers simple et développer des fonctionnalités
+          en PHP avec une base de données SQL.
+        </p>
+
+        <div class="project-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">SQL</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag purple">Architecture 3 tiers</span>
+          <span class="tag purple">Projet pédagogique</span>
+        </div>
+
+        <span class="project-link">Voir le projet &rarr;</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
      MODALES PROJETS
 ══════════════════════════════════════════ -->
 
-<!-- Overlay -->
-<div id="modal-overlay" onclick="closeModal()"></div>
+  <!-- Overlay -->
+  <div id="modal-overlay" onclick="closeModal()"></div>
 
-<!-- Modal : API Series -->
-<div class="project-modal" id="modal-api-series">
-  <button class="modal-close" onclick="closeModal()">&times;</button>
-  <div class="modal-inner">
-    
-    <div class="modal-left">
-      <div class="modal-eyebrow">2025 &mdash; Projet BTS</div>
-      
-      <h2 class="modal-title">API REST - Gestion de séries</h2>
-      
-      <p class="modal-desc">
-        Développement d'une <strong>API REST</strong> permettant de gérer une base de données de séries.
-        L'application permet de manipuler les données via des endpoints (CRUD) pour les séries,
-        les genres et les saisons.
-      </p>
-      
-      <p class="modal-desc">
-        Le projet a été réalisé en <strong>Java avec Spring Boot</strong> et utilise une base de données
-        <strong>MySQL / MariaDB</strong>. Les données sont automatiquement générées au démarrage
-        grâce à un fichier <strong>import.sql</strong>, et la base est recréée à chaque exécution.
-      </p>
+  <!-- Modal : API Series -->
+  <div class="project-modal" id="modal-api-series">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-inner">
 
-      <div class="modal-tags">
-        <span class="tag">Java</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">REST API</span>
-        <span class="tag">MySQL</span>
-        <span class="tag purple">Gradle</span>
-        <span class="tag purple">CRUD</span>
-      </div>
+      <div class="modal-left">
+        <div class="modal-eyebrow">2025 &mdash; Projet BTS</div>
 
-      <a href="https://github.com/FilloyLuca/TP_ApiSerie" class="modal-github-btn" target="_blank" rel="noopener">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="18"/>
-        Voir sur GitHub
-      </a>
-    </div>
+        <h2 class="modal-title">API REST - Gestion de séries</h2>
 
-    <div class="modal-right">
-      <div class="modal-preview">
-        <div class="modal-preview-icon">&#127909;</div>
-        <div class="modal-preview-label">API Series</div>
-        
-        <div class="modal-features">
-          <div class="modal-feature"><span class="feature-dot"></span>API REST complète</div>
-          <div class="modal-feature"><span class="feature-dot"></span>CRUD séries / genres / saisons</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Base auto-créée</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Données injectées (import.sql)</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Spring Boot + Gradle</div>
+        <p class="modal-desc">
+          Développement d'une <strong>API REST</strong> permettant de gérer une base de données de séries.
+          L'application permet de manipuler les données via des endpoints (CRUD) pour les séries,
+          les genres et les saisons.
+        </p>
+
+        <p class="modal-desc">
+          Le projet a été réalisé en <strong>Java avec Spring Boot</strong> et utilise une base de données
+          <strong>MySQL / MariaDB</strong>. Les données sont automatiquement générées au démarrage
+          grâce à un fichier <strong>import.sql</strong>, et la base est recréée à chaque exécution.
+        </p>
+
+        <div class="modal-tags">
+          <span class="tag">Java</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">REST API</span>
+          <span class="tag">MySQL</span>
+          <span class="tag purple">Gradle</span>
+          <span class="tag purple">CRUD</span>
         </div>
-      </div>
-    </div>
 
-  </div>
-</div>
-
-<!-- Modal 2 : MonstersWeb -->
-<div class="project-modal" id="modal-monstersweb">
-  <button class="modal-close" onclick="closeModal()">&times;</button>
-  <div class="modal-inner">
-    
-    <div class="modal-left">
-      <div class="modal-eyebrow">2025 &mdash; Projet BTS</div>
-      
-      <h2 class="modal-title">MonstersWeb - Jeu web interactif</h2>
-      
-      <p class="modal-desc">
-        Développement d’une application web interactive inspirée des mécaniques de Pokémon.
-        Le projet consiste à transformer une application Kotlin en version web avec une
-        <strong>interface graphique moderne</strong> accessible depuis un navigateur.
-      </p>
-      
-      <p class="modal-desc">
-        L’application permet la <strong>gestion des utilisateurs</strong> (inscription, connexion),
-        le <strong>combat de monstres</strong>, la capture, ainsi que la sauvegarde des parties.
-        L’architecture repose sur un backend <strong>Spring Boot</strong> et une base de données
-        <strong>MariaDB</strong>, avec une interface dynamique en JavaScript / Angular.
-      </p>
-
-      <div class="modal-tags">
-        <span class="tag">Kotlin</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Angular</span>
-        <span class="tag">MariaDB</span>
-        <span class="tag purple">Jeu Web</span>
-        <span class="tag purple">Full Stack</span>
-      </div>
-
-      <a href="https://github.com/FilloyLuca/OGMonsterWeb" class="modal-github-btn" target="_blank" rel="noopener">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" width="18"/>
-        Voir sur GitHub
-      </a>
-    </div>
-
-    <div class="modal-right">
-      <div class="modal-preview">
-        <div class="modal-preview-icon">&#127918;</div>
-        <div class="modal-preview-label">Monsters Web</div>
-        
-        <div class="modal-features">
-          <div class="modal-feature"><span class="feature-dot"></span>Système de combat</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Capture de monstres</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Gestion utilisateurs</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Interface dynamique</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Architecture full-stack</div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<!-- Modal : SavApp -->
-<div class="project-modal" id="modal-savapp">
-  <button class="modal-close" onclick="closeModal()">&times;</button>
-  <div class="modal-inner">
-    
-    <div class="modal-left">
-      <div class="modal-eyebrow">2024 &mdash; Projet BTS</div>
-      
-      <h2 class="modal-title">SavApp - Calculateur de saponification</h2>
-      
-      <p class="modal-desc">
-        Développement d’une application web permettant de calculer la composition de savons
-        en <strong>saponification à froid (SaF)</strong>. Le projet repose sur des
-        <strong>algorithmes métier</strong> intégrant les indices de saponification,
-        le surgraissage et les propriétés des corps gras.
-      </p>
-      
-      <p class="modal-desc">
-        L’application fonctionne avec une <strong>API REST externe</strong> permettant de gérer
-        les <strong>ingrédients, utilisateurs et données métier</strong>. Cette API,
-        développée en <strong>Kotlin avec Spring Boot</strong>, est essentielle au bon
-        fonctionnement du calculateur.
-      </p>
-
-      <div class="modal-tags">
-        <span class="tag">Kotlin</span>
-        <span class="tag">Spring Boot</span>
-        <span class="tag">Angular</span>
-        <span class="tag">MariaDB</span>
-        <span class="tag purple">API REST</span>
-        <span class="tag purple">Calcul métier</span>
-      </div>
-
-      <!-- Bouton principal projet -->
-      <a href="https://github.com/FilloyLuca/sav-app" class="modal-github-btn" target="_blank" rel="noopener">
-        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="18"/>
-        Voir le projet
-      </a>
-
-      <!-- Boutons API -->
-      <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
-        <a href="https://github.com/FilloyLuca/SavonAPI" target="_blank" class="modal-github-btn">
-          API Savon (perso)
-        </a>
-        <a href="https://github.com/Timomoulin/SavonAPI3" target="_blank" class="modal-github-btn">
-          API Savon (prof)
+        <a href="https://github.com/FilloyLuca/TP_ApiSerie" class="modal-github-btn" target="_blank" rel="noopener">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+            width="18" />
+          Voir sur GitHub
         </a>
       </div>
 
+      <div class="modal-right">
+        <div class="modal-preview">
+          <div class="modal-preview-icon">&#127909;</div>
+          <div class="modal-preview-label">API Series</div>
+
+          <div class="modal-features">
+            <div class="modal-feature"><span class="feature-dot"></span>API REST complète</div>
+            <div class="modal-feature"><span class="feature-dot"></span>CRUD séries / genres / saisons</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Base auto-créée</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Données injectées (import.sql)</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Spring Boot + Gradle</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal 2 : MonstersWeb -->
+  <div class="project-modal" id="modal-monstersweb">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-inner">
+
+      <div class="modal-left">
+        <div class="modal-eyebrow">2025 &mdash; Projet BTS</div>
+
+        <h2 class="modal-title">MonstersWeb - Jeu web interactif</h2>
+
+        <p class="modal-desc">
+          Développement d’une application web interactive inspirée des mécaniques de Pokémon.
+          Le projet consiste à transformer une application Kotlin en version web avec une
+          <strong>interface graphique moderne</strong> accessible depuis un navigateur.
+        </p>
+
+        <p class="modal-desc">
+          L’application permet la <strong>gestion des utilisateurs</strong> (inscription, connexion),
+          le <strong>combat de monstres</strong>, la capture, ainsi que la sauvegarde des parties.
+          L’architecture repose sur un backend <strong>Spring Boot</strong> et une base de données
+          <strong>MariaDB</strong>, avec une interface dynamique en JavaScript / Angular.
+        </p>
+
+        <div class="modal-tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">Angular</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag purple">Jeu Web</span>
+          <span class="tag purple">Full Stack</span>
+        </div>
+
+        <a href="https://github.com/FilloyLuca/OGMonsterWeb" class="modal-github-btn" target="_blank" rel="noopener">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"
+            width="18" />
+          Voir sur GitHub
+        </a>
+      </div>
+
+      <div class="modal-right">
+        <div class="modal-preview">
+          <div class="modal-preview-icon">&#127918;</div>
+          <div class="modal-preview-label">Monsters Web</div>
+
+          <div class="modal-features">
+            <div class="modal-feature"><span class="feature-dot"></span>Système de combat</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Capture de monstres</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Gestion utilisateurs</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Interface dynamique</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Architecture full-stack</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal : SavApp -->
+  <div class="project-modal" id="modal-savapp">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-inner">
+
+      <div class="modal-left">
+        <div class="modal-eyebrow">2024 &mdash; Projet BTS</div>
+
+        <h2 class="modal-title">SavApp - Calculateur de saponification</h2>
+
+        <p class="modal-desc">
+          Développement d’une application web permettant de calculer la composition de savons
+          en <strong>saponification à froid (SaF)</strong>. Le projet repose sur des
+          <strong>algorithmes métier</strong> intégrant les indices de saponification,
+          le surgraissage et les propriétés des corps gras.
+        </p>
+
+        <p class="modal-desc">
+          L’application fonctionne avec une <strong>API REST externe</strong> permettant de gérer
+          les <strong>ingrédients, utilisateurs et données métier</strong>. Cette API,
+          développée en <strong>Kotlin avec Spring Boot</strong>, est essentielle au bon
+          fonctionnement du calculateur.
+        </p>
+
+        <div class="modal-tags">
+          <span class="tag">Kotlin</span>
+          <span class="tag">Spring Boot</span>
+          <span class="tag">Angular</span>
+          <span class="tag">MariaDB</span>
+          <span class="tag purple">API REST</span>
+          <span class="tag purple">Calcul métier</span>
+        </div>
+
+        <!-- Bouton principal projet -->
+        <a href="https://github.com/FilloyLuca/sav-app" class="modal-github-btn" target="_blank" rel="noopener">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="18" />
+          Voir le projet
+        </a>
+
+        <!-- Boutons API -->
+        <div style="margin-top:10px; display:flex; gap:10px; flex-wrap:wrap;">
+          <a href="https://github.com/FilloyLuca/SavonAPI" target="_blank" class="modal-github-btn">
+            API Savon (perso)
+          </a>
+          <a href="https://github.com/Timomoulin/SavonAPI3" target="_blank" class="modal-github-btn">
+            API Savon (prof)
+          </a>
+        </div>
+
+      </div>
+
+      <div class="modal-right">
+        <div class="modal-preview">
+          <div class="modal-preview-icon">&#129514;</div>
+          <div class="modal-preview-label">Sav-App</div>
+
+          <div class="modal-features">
+            <div class="modal-feature"><span class="feature-dot"></span>Calcul saponification</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Gestion des ingrédients</div>
+            <div class="modal-feature"><span class="feature-dot"></span>API REST externe</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Interface Angular</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Architecture full-stack</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Modal : Geoworld -->
+  <div class="project-modal" id="modal-geoworld">
+    <button class="modal-close" onclick="closeModal()">&times;</button>
+    <div class="modal-inner">
+
+      <div class="modal-left">
+        <div class="modal-eyebrow">2025 — Projet pédagogique</div>
+
+        <h2 class="modal-title">Geoworld - Projet Web 3 tiers</h2>
+
+        <p class="modal-desc">
+          Geoworld est un projet pédagogique destiné aux étudiants apprentis développeurs.
+          L'objectif est d'apprendre à travailler sur un projet existant tout en respectant
+          des <strong>conventions de codage</strong> et une organisation claire du code.
+        </p>
+
+        <p class="modal-desc">
+          Le projet introduit une <strong>architecture web 3 tiers simple</strong> avec
+          une interface en HTML/CSS, une logique en <strong>PHP</strong> et une base
+          de données <strong>SQL</strong>. Il permet également de se familiariser avec
+          la méthodologie de projet (user stories, organisation du travail, etc.).
+        </p>
+
+        <div class="modal-tags">
+          <span class="tag">PHP</span>
+          <span class="tag">SQL</span>
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag purple">Architecture 3 tiers</span>
+          <span class="tag purple">Projet pédagogique</span>
+        </div>
+
+        <!-- Bouton principal projet -->
+        <a href="TON_LIEN_GITHUB_ICI" class="modal-github-btn" target="_blank" rel="noopener">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="18" />
+          Voir le projet
+        </a>
+
+      </div>
+
+      <div class="modal-right">
+        <div class="modal-preview">
+          <div class="modal-preview-icon">🌍</div>
+          <div class="modal-preview-label">Geoworld</div>
+
+          <div class="modal-features">
+            <div class="modal-feature"><span class="feature-dot"></span>Projet pédagogique</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Architecture 3 tiers</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Développement PHP</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Base de données SQL</div>
+            <div class="modal-feature"><span class="feature-dot"></span>Travail sur projet existant</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <section id="skills">
+    <div class="section-header fade-in">
+      <span class="section-num">04 -</span>
+      <h2 class="section-title">Tableau de competences</h2>
+      <span class="section-line"></span>
     </div>
 
-    <div class="modal-right">
-      <div class="modal-preview">
-        <div class="modal-preview-icon">&#129514;</div>
-        <div class="modal-preview-label">Sav-App</div>
-        
-        <div class="modal-features">
-          <div class="modal-feature"><span class="feature-dot"></span>Calcul saponification</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Gestion des ingrédients</div>
-          <div class="modal-feature"><span class="feature-dot"></span>API REST externe</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Interface Angular</div>
-          <div class="modal-feature"><span class="feature-dot"></span>Architecture full-stack</div>
+    <div class="skills-categories fade-in">
+
+      <div class="skills-group">
+        <div class="skills-group-label">Langages Web</div>
+        <div class="skills-icons-grid">
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+            <span>HTML5</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+            <span>CSS3</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" />
+            <span>JavaScript</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+            <span>PHP</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+            <span>Python</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Python" />
+            <span>Kotlin</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-group-label">Frameworks &amp; Librairies</div>
+        <div class="skills-icons-grid">
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" />
+            <span>Laravel</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+              alt="Tailwind" />
+            <span>Tailwind</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" />
+            <span>Node.js</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg"
+              alt="WordPress" />
+            <span>WordPress</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+              alt="BeautifulSoup" />
+            <span>BeautifulSoup</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-group-label">Base de donnees</div>
+        <div class="skills-icons-grid">
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+            <span>MySQL</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+              alt="PostgreSQL" />
+            <span>PostgreSQL</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-group">
+        <div class="skills-group-label">Outils &amp; Environnement</div>
+        <div class="skills-icons-grid">
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+            <span>Git</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+            <span>GitHub</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" />
+            <span>Linux</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+            <span>VS Code</span>
+          </div>
+          <div class="skill-icon-item">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg"
+              alt="VS Code" />
+            <span>IntelliJ</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="veille">
+    <div class="section-header fade-in">
+      <span class="section-num">05 -</span>
+      <h2 class="section-title">Veille technologique</h2>
+      <span class="section-line"></span>
+    </div>
+    <div class="veille-grid">
+      <div class="veille-card fade-in" onclick="window.location='veille-ia-jeux-video.html'" style="cursor:pointer;">
+        <div class="veille-date">2025/2026</div>
+        <h3 class="veille-title">L'IA dans le developpement du jeu video</h3>
+        <p class="veille-summary">En 2025, l'IA transforme le pipeline des studios : generation d'assets, PNJ autonomes
+          (NVIDIA ACE), assistance au code. 87% des developpeurs utilisent l'IA au quotidien.</p>
+        <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.8rem;">
+          <span class="veille-source">Source : Google/Harris Poll, GDC 2025</span>
+          <span class="project-link" style="font-size:0.68rem;">Lire &rarr;</span>
         </div>
       </div>
     </div>
+  </section>
 
+  <div class="contact-section" id="contact">
+    <div class="contact-glow"></div>
+    <p class="contact-label">// Disponible pour un stage ou alternance</p>
+    <h2 class="contact-title">Travaillons ensemble</h2>
+    <p class="contact-sub">N'hesitez pas a me contacter pour toute opportunite ou collaboration.</p>
+    <a href="mailto:filloylucapro@gmail.com" class="btn btn-primary">filloylucapro@gmail.com</a>
   </div>
-</div>
 
-<section id="skills">
-  <div class="section-header fade-in">
-    <span class="section-num">04 -</span>
-    <h2 class="section-title">Tableau de competences</h2>
-    <span class="section-line"></span>
-  </div>
-
-  <div class="skills-categories fade-in">
-
-    <div class="skills-group">
-      <div class="skills-group-label">Langages Web</div>
-      <div class="skills-icons-grid">
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5"/>
-          <span>HTML5</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3"/>
-          <span>CSS3</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"/>
-          <span>JavaScript</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"/>
-          <span>PHP</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python"/>
-          <span>Python</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Python"/>
-          <span>Kotlin</span>
-        </div>
-      </div>
+  <footer>
+    <span class="footer-copy">2025 - Luca Filloy - BTS SIO SLAM</span>
+    <button id="fire-egg" aria-label="easter egg">🔥</button>
+    <div class="footer-links">
+      <a href="https://github.com/lucafilloy" target="_blank">GitHub</a>
+      <a href="https://www.linkedin.com/in/luca-filloy-222b61349/" target="_blank">LinkedIn</a>
+      <a href="documents/CVFilloyLuca.pdf" target="_blank">CV PDF</a>
+      <a href="documents/CVFilloyLuca.pdf" download>Télécharger mon CV</a>
     </div>
+  </footer>
 
-    <div class="skills-group">
-      <div class="skills-group-label">Frameworks &amp; Librairies</div>
-      <div class="skills-icons-grid">
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel"/>
-          <span>Laravel</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind"/>
-          <span>Tailwind</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js"/>
-          <span>Node.js</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain.svg" alt="WordPress"/>
-          <span>WordPress</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="BeautifulSoup"/>
-          <span>BeautifulSoup</span>
-        </div>
-      </div>
-    </div>
+  <script>
+    /* Scroll fade-in */
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
 
-    <div class="skills-group">
-      <div class="skills-group-label">Base de donnees</div>
-      <div class="skills-icons-grid">
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"/>
-          <span>MySQL</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL"/>
-          <span>PostgreSQL</span>
-        </div>
-      </div>
-    </div>
+    /* Theme + Favicon toggle */
+    const btn = document.getElementById('theme-toggle');
+    const themeCSS = document.getElementById('theme-css');
+    const favicon = document.getElementById('favicon');
 
-    <div class="skills-group">
-      <div class="skills-group-label">Outils &amp; Environnement</div>
-      <div class="skills-icons-grid">
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"/>
-          <span>Git</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"/>
-          <span>GitHub</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux"/>
-          <span>Linux</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code"/>
-          <span>VS Code</span>
-        </div>
-        <div class="skill-icon-item">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" alt="VS Code"/>
-          <span>IntelliJ</span>
-        </div>
-      </div>
-    </div>
+    function applyTheme(theme) {
+      themeCSS.href = theme === 'dark' ? 'style-dark.css' : 'style-light.css';
+      favicon.href = theme === 'dark' ? 'favicon-dark.svg' : 'favicon-light.svg';
+      document.documentElement.setAttribute('data-theme', theme);
+      localStorage.setItem('portfolio-theme', theme);
+    }
 
-  </div>
-</section>
+    applyTheme(localStorage.getItem('portfolio-theme') || 'dark');
 
-<section id="veille">
-  <div class="section-header fade-in">
-    <span class="section-num">05 -</span>
-    <h2 class="section-title">Veille technologique</h2>
-    <span class="section-line"></span>
-  </div>
-  <div class="veille-grid">
-   <div class="veille-card fade-in" onclick="window.location='veille-ia-jeux-video.html'" style="cursor:pointer;">
-      <div class="veille-date">2025/2026</div>
-      <h3 class="veille-title">L'IA dans le developpement du jeu video</h3>
-      <p class="veille-summary">En 2025, l'IA transforme le pipeline des studios : generation d'assets, PNJ autonomes (NVIDIA ACE), assistance au code. 87% des developpeurs utilisent l'IA au quotidien.</p>
-      <div style="display:flex;justify-content:space-between;align-items:center;margin-top:0.8rem;">
-        <span class="veille-source">Source : Google/Harris Poll, GDC 2025</span>
-        <span class="project-link" style="font-size:0.68rem;">Lire &rarr;</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<div class="contact-section" id="contact">
-  <div class="contact-glow"></div>
-  <p class="contact-label">// Disponible pour un stage ou alternance</p>
-  <h2 class="contact-title">Travaillons ensemble</h2>
-  <p class="contact-sub">N'hesitez pas a me contacter pour toute opportunite ou collaboration.</p>
-  <a href="mailto:filloylucapro@gmail.com" class="btn btn-primary">filloylucapro@gmail.com</a>
-</div>
-
-<footer>
-  <span class="footer-copy">2025 - Luca Filloy - BTS SIO SLAM</span>
-  <button id="fire-egg" aria-label="easter egg">🔥</button>
-  <div class="footer-links">
-    <a href="https://github.com/lucafilloy" target="_blank">GitHub</a>
-    <a href="https://www.linkedin.com/in/luca-filloy-222b61349/" target="_blank">LinkedIn</a>
-    <a href="documents/CVFilloyLuca.pdf" target="_blank">CV PDF</a>
-    <a href="documents/CVFilloyLuca.pdf" download>Télécharger mon CV</a>  
-  </div>
-</footer>
-
-<script>
-  /* Scroll fade-in */
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
-  document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
-
-  /* Theme + Favicon toggle */
-  const btn      = document.getElementById('theme-toggle');
-  const themeCSS = document.getElementById('theme-css');
-  const favicon  = document.getElementById('favicon');
-
-  function applyTheme(theme) {
-    themeCSS.href = theme === 'dark' ? 'style-dark.css' : 'style-light.css';
-    favicon.href  = theme === 'dark' ? 'favicon-dark.svg' : 'favicon-light.svg';
-    document.documentElement.setAttribute('data-theme', theme);
-    localStorage.setItem('portfolio-theme', theme);
-  }
-
-  applyTheme(localStorage.getItem('portfolio-theme') || 'dark');
-
-  /* ── Modales projets ── */
-  function openModal(id) {
-    document.getElementById('modal-overlay').classList.add('active');
-    document.getElementById(id).classList.add('active');
-    document.body.style.overflow = 'hidden';
-  }
-  function closeModal() {
-    document.getElementById('modal-overlay').classList.remove('active');
-    document.querySelectorAll('.project-modal').forEach(m => m.classList.remove('active'));
-    document.body.style.overflow = '';
-  }
-  // Fermer avec Echap
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+    /* ── Modales projets ── */
+    function openModal(id) {
+      document.getElementById('modal-overlay').classList.add('active');
+      document.getElementById(id).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeModal() {
+      document.getElementById('modal-overlay').classList.remove('active');
+      document.querySelectorAll('.project-modal').forEach(m => m.classList.remove('active'));
+      document.body.style.overflow = '';
+    }
+    // Fermer avec Echap
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
 
-  btn.addEventListener('click', () => {
-    const cur = localStorage.getItem('portfolio-theme') || 'dark';
-    applyTheme(cur === 'dark' ? 'light' : 'dark');
-  });
+    btn.addEventListener('click', () => {
+      const cur = localStorage.getItem('portfolio-theme') || 'dark';
+      applyTheme(cur === 'dark' ? 'light' : 'dark');
+    });
 
-/* ── EASTER EGG 🔥 ── */
-  const fireBtn = document.getElementById('fire-egg');
-  let fireInterval = null;
-  let lavaInterval = null;
+    /* ── EASTER EGG 🔥 ── */
+    const fireBtn = document.getElementById('fire-egg');
+    let fireInterval = null;
+    let lavaInterval = null;
 
-  const EMOJIS = ['🔥','🔥','🔥','🔥','💥','🌋','✨','💫','🔴','🟠'];
-  const CRACKS = ['🌋','🔥','💥'];
+    const EMOJIS = ['🔥', '🔥', '🔥', '🔥', '💥', '🌋', '✨', '💫', '🔴', '🟠'];
+    const CRACKS = ['🌋', '🔥', '💥'];
 
-  function spawnFlame() {
-    const el = document.createElement('span');
-    el.className = 'fire-particle';
-    el.textContent = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
-    el.style.left   = Math.random() * 100 + 'vw';
-    el.style.fontSize = (0.8 + Math.random() * 1.8) + 'rem';
-    el.style.setProperty('--dur', (1.5 + Math.random() * 2) + 's');
-    document.body.appendChild(el);
-    setTimeout(() => el.remove(), 3500);
-  }
+    function spawnFlame() {
+      const el = document.createElement('span');
+      el.className = 'fire-particle';
+      el.textContent = EMOJIS[Math.floor(Math.random() * EMOJIS.length)];
+      el.style.left = Math.random() * 100 + 'vw';
+      el.style.fontSize = (0.8 + Math.random() * 1.8) + 'rem';
+      el.style.setProperty('--dur', (1.5 + Math.random() * 2) + 's');
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 3500);
+    }
 
-  function spawnCrack() {
-    const el = document.createElement('span');
-    el.className = 'lava-crack';
-    el.textContent = CRACKS[Math.floor(Math.random() * CRACKS.length)];
-    el.style.left = Math.random() * 95 + 'vw';
-    el.style.fontSize = (1.5 + Math.random() * 2) + 'rem';
-    document.body.appendChild(el);
-    setTimeout(() => el.remove(), 1200);
-  }
+    function spawnCrack() {
+      const el = document.createElement('span');
+      el.className = 'lava-crack';
+      el.textContent = CRACKS[Math.floor(Math.random() * CRACKS.length)];
+      el.style.left = Math.random() * 95 + 'vw';
+      el.style.fontSize = (1.5 + Math.random() * 2) + 'rem';
+      document.body.appendChild(el);
+      setTimeout(() => el.remove(), 1200);
+    }
 
-  function ignite() {
-    document.body.classList.add('on-fire');
-    fireBtn.textContent = '🧯';
-    fireInterval = setInterval(spawnFlame, 180);
-    lavaInterval = setInterval(spawnCrack, 400);
-    localStorage.setItem('on-fire', 'true');
-  }
+    function ignite() {
+      document.body.classList.add('on-fire');
+      fireBtn.textContent = '🧯';
+      fireInterval = setInterval(spawnFlame, 180);
+      lavaInterval = setInterval(spawnCrack, 400);
+      localStorage.setItem('on-fire', 'true');
+    }
 
-  function extinguish() {
-    document.body.classList.remove('on-fire');
-    fireBtn.textContent = '🔥';
-    clearInterval(fireInterval);
-    clearInterval(lavaInterval);
-    fireInterval = null;
-    lavaInterval = null;
-    document.querySelectorAll('.fire-particle, .lava-crack').forEach(el => el.remove());
-    localStorage.setItem('on-fire', 'false');
-  }
+    function extinguish() {
+      document.body.classList.remove('on-fire');
+      fireBtn.textContent = '🔥';
+      clearInterval(fireInterval);
+      clearInterval(lavaInterval);
+      fireInterval = null;
+      lavaInterval = null;
+      document.querySelectorAll('.fire-particle, .lava-crack').forEach(el => el.remove());
+      localStorage.setItem('on-fire', 'false');
+    }
 
-  fireBtn.addEventListener('click', function() {
-    document.body.classList.contains('on-fire') ? extinguish() : ignite();
-  });
+    fireBtn.addEventListener('click', function () {
+      document.body.classList.contains('on-fire') ? extinguish() : ignite();
+    });
 
-  if (localStorage.getItem('on-fire') === 'true') ignite();
-</script>
+    if (localStorage.getItem('on-fire') === 'true') ignite();
+  </script>
 </body>
+
 </html>
