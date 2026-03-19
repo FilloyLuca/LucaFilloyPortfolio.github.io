@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  💼 <strong>Portfolio </strong> développé dans le cadre de mon BTS SIO SLAM  
+  💼 <strong>Portfolio</strong> développé dans le cadre de mon BTS SIO SLAM  
 </p>
 
 ---
