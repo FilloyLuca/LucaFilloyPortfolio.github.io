@@ -457,8 +457,22 @@ section {
   border: 1px solid var(--border);
   border-radius: 4px;
   padding: 1.8rem;
+  position: relative;
+  overflow: hidden;
   transition: border-color 0.2s, background 0.35s;
 }
+.veille-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--accent2));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s;
+}
+.veille-card:hover::before { transform: scaleX(1); }
+
 .veille-card:hover { border-color: var(--accent); }
 .veille-date {
   font-family: var(--mono);
