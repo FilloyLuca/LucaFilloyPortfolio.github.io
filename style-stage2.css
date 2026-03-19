@@ -221,6 +221,26 @@ footer {
   text-decoration: none;
   transition: color 0.2s;
 }
+.footer-links a {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer-links a img,
+.footer-links a svg {
+  opacity: 0.6;
+  filter: grayscale(1) brightness(1.5);
+  transition: opacity 0.2s;
+}
+.footer-links a:hover svg,
+.footer-links a:hover img {
+  opacity: 1;
+}
 .footer-links a:hover { color: var(--accent); }
 
 /* ── COMPTE RENDU CARD ── */
